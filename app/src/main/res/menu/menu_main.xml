@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:title="Sobre"
           android:id="@+id/mnSobre"
-          app:showAsAction="always"
-        android:icon="@drawable/ic_face_black_24dp"/>
+          app:showAsAction="never"
+          android:icon="@drawable/ic_face_black_24dp"/>
+
+    <item android:title="Buscar"
+        android:icon="@drawable/ic_attach_file_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/mnSearch"/>
+
+    <item android:id="@+id/mnRefresh"
+        android:icon="@drawable/ic_thumb_up_black_24dp"
+        android:title="Atualizar"
+        app:showAsAction="ifRoom"/>
+
 </menu>
