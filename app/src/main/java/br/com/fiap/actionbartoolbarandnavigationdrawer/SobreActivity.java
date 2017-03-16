@@ -13,11 +13,17 @@ public class SobreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sobre);
 
         ActionBar actionBar = getSupportActionBar();
+
+        //Ativa a setinha para voltar para a tela anterior
+
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        //Verifica se foi o botão de voltar da ActionBar
+
         if (item.getItemId() == android.R.id.home);
         finish();
 
